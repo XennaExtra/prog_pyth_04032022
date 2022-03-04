@@ -72,7 +72,7 @@ def subtract(x, y):
   return x - y
 def multiply(x, y):
   return x * y
-def exponentiate(x, y):
+def exponentiate(x, y): #TODO, poprawic
   result = 1
   while(y>0):
     result * x
@@ -127,17 +127,16 @@ else:
 # iloczyn, iloraz, potęgę tych liczb, nie zapomnij o stosownych komentarzach informacyjnych dla użytkownika.
 num_1 = float(input("Podaj liczbe: "))
 num_2 = float(input("Podaj liczbe: "))
-print("Wynik dodawania: " + add(num_1, num_2))
-print("Wynik odejmowania: " + subtract(num_1, num_2))
-print("Wynik mnożenia: " + multiply(num_1, num_2))
-print("Wynik dzielenia: " + divide(num_1, num_2))
-print("Wynik potegowania: " + exponentiate(num_1, num_2))
+print(f"Wynik dodawania: {add(num_1, num_2)}")
+print(f"Wynik odejmowania: {subtract(num_1, num_2)}")
+print(f"Wynik mnożenia: {multiply(num_1, num_2)}")
+print(f"Wynik dzielenia: {divide(num_1, num_2)}")
+print(f"Wynik potegowania: {exponentiate(num_1, num_2)}")
 
 # 8. Sprawdź wynik działań
 # 0 > 1
 if 0 > 1:
-  print("0 > 1")  
-print(bool(0>1))
+  print("0 > 1") 
 # 0 <= 1
 if 0 <= 1:
   print("0 <= 1") 
