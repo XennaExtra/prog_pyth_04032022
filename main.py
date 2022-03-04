@@ -25,10 +25,10 @@ Snake Case: user_login_count
 # print(type(num2)) # fun type sprawdza typ zmiennej
 
 # print("#####################")
-# z = 'Ala'
-# x = "ma"
-# y = "koty"
-# zdanie = y + x + z
+z = 'Ala '
+x = "ma "
+y = "kota"
+zdanie = z + x + y
 # print(zdanie)
 #print(y,x,z)
 # X = 2     # python rozróżnia małe i duże litery (X to nie to samo co x)
@@ -66,9 +66,14 @@ Snake Case: user_login_count
 
 ##############Zadania do wykonania, Twoje pierwsze algorytmy
 # 1. Wykonaj odejmowanie, mnożenie i dzielenie 2 dowolnych liczb
+def add(x, y):
+  return x + y
 def subtract(x, y):
   return x - y
 def multiply(x, y):
+  return x * y
+def exponentiate(x, y):
+  
   return x * y
 def divide(x, y):
   if y == 0:
@@ -81,18 +86,40 @@ print(multiply(x, y))
 print(divide(x, y))
 
 # 2. Oblicz wyrażenie 2x+5y   gdzie: x,y to dowolne dwie liczby które podaje użytkownik (w konsoli)
-a = input("liczbe podaj")
-b = input("drugą liczbe podaj byq:")
-def wyrazenie(self, a, b):
-  return (2*a)+(5*y)
-print(wyrazenie(a,b))
+a = float(input("podaj liczbe: ")) 
+b = float(input("drugą liczbe podaj byq: "))
+def wyrazenie(a, b):
+  return 2*a + 5*b
+print(wyrazenie(a, b))
 
 # 3. Popraw zmienną zdanie tak aby wyświetlany był napis: "Ala ma kota"
-  
+print(zdanie)
 # 4. Wyświetl zdanie "Jestem a b mam c lat studiuję d",
 #  gdzie : a-imie, a-nazwisko, c-liczba, d-kierunek studiów są dowolne zmienne które podaje użytkownik (wczytywane z klawiatury)
+imie = input("Podaj imie: ")
+nazwisko = input("Podaj nazwisko: ")
+wiek = int(input("Podaj wiek: "))
+kierunek = input("Podaj kierunek studiow: ")
+
+print(f"Jestem {imie} {nazwisko} mam {wiek} lat i studiuję {kierunek}")
+
 # 5. Sprawdź/porównaj czy 1+2+10+20000001+4+347586970885 jest równa 321784560456434534646
+num = 1+2+10+20000001+4+347586970885
+num2 = 321784560456434534646
+print(f"Liczby {num} oraz {num2} sa ")
+if (num == num2):
+  print("rowne")
+else:
+  print("nierowne")
 # 6. Sprawdź czy suma dowolnych dwóch liczb podanych przez użytkownika jest liczbą parzystą czy nieparzystą wyświetl właściwy komunikat
+x = float(input("Podaj x: "))
+y = float(input("Podaj y: "))
+z = x + y
+print(f"suma liczby {x} oraz {y} wynosi {z} i jest ")
+if z % 2 == 0:
+  print("parzysta")
+else:
+  print("nieparzysta")
 # 7. Utwórz prosty kalkulator dla 2 zmiennych podanych przez użytkownika, który obliczy: sumę, różnicę,
 # iloczyn, iloraz, potęgę tych liczb, nie zapomnij o stosownych komentarzach informacyjnych dla użytkownika.
 # 8. Sprawdź wynik działań
