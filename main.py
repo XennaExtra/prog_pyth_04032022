@@ -135,11 +135,21 @@ print("Wynik potegowania: " + exponentiate(num_1, num_2))
 
 # 8. Sprawdź wynik działań
 # 0 > 1
+if 0 > 1:
+  print("0 > 1")  
 print(bool(0>1))
 # 0 <= 1
+if 0 <= 1:
+  print("0 <= 1") 
 # 0 >= 1
+if 0 >= 1:
+  print("0 >= 1") 
 # 1 == 0
+if 1 == 0:
+  print("1 == 0") 
 # 1 == 1
+if 1 == 1:
+  print("1 == 1") 
 # 1 != 0
 # 1 != 1
 #(x > 1 and x < 13) and x != 5  , dla x = 2
